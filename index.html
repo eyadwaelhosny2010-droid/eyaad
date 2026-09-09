@@ -1,1 +1,481 @@
-https://chatgpt.com/backend-api/estuary/content?id=file_000000006b3481f4aed1dc57ab6e5f9c&fn=index_9_9_embedded.html&cd=attachment&ts=496941&p=fs&cid=1&sig=f7e3460d537307f65512e1f65abeac9dc0b9ea9cc2e5b8f1614a78c62e8e0e71&v=0
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>9/9 ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Cairo',sans-serif;
+    background:radial-gradient(circle at top,#35152d,#120712 55%,#050305);
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+#lockScreen{
+    position:fixed;
+    inset:0;
+    z-index:9999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:radial-gradient(circle at center,#40172f,#090409 70%);
+    padding:20px;
+}
+
+.lockBox{
+    width:100%;
+    max-width:380px;
+    padding:35px 25px;
+    border-radius:28px;
+    text-align:center;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 0 40px rgba(255,0,130,.2);
+    backdrop-filter:blur(15px);
+}
+
+.lock{
+    font-size:65px;
+    margin-bottom:10px;
+    animation:pulse 2s infinite;
+}
+
+.lockBox h1{
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.lockBox p{
+    color:#ddd;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    text-align:center;
+    font-size:18px;
+    background:rgba(255,255,255,.12);
+    color:white;
+    margin-bottom:12px;
+}
+
+input::placeholder{
+    color:#bbb;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+    padding:14px 25px;
+    border-radius:15px;
+    background:linear-gradient(135deg,#ff3b91,#9c3cff);
+    color:white;
+    font-size:17px;
+    font-family:'Cairo';
+    box-shadow:0 8px 25px rgba(255,0,150,.25);
+}
+
+#error{
+    color:#ff789f;
+    margin-top:12px;
+    display:none;
+}
+
+#main{
+    display:none;
+    padding:25px 15px 60px;
+}
+
+.container{
+    max-width:850px;
+    margin:auto;
+}
+
+.hero{
+    text-align:center;
+    padding:40px 15px 25px;
+}
+
+.hero .heart{
+    font-size:55px;
+    animation:pulse 2s infinite;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:45px;
+    margin:10px 0;
+    background:linear-gradient(90deg,#ff6ba9,#fff,#c46cff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero h2{
+    font-size:22px;
+    font-weight:600;
+}
+
+.date{
+    display:inline-block;
+    margin-top:15px;
+    padding:9px 22px;
+    border-radius:30px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+}
+
+.card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:28px;
+    padding:30px 22px;
+    margin-top:25px;
+    box-shadow:0 10px 35px rgba(0,0,0,.3);
+    backdrop-filter:blur(10px);
+}
+
+.card h2{
+    text-align:center;
+    color:#ff75ad;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.message{
+    line-height:2.25;
+    font-size:17px;
+    color:#f4edf2;
+}
+
+.message p{
+    margin-bottom:18px;
+}
+
+.final{
+    text-align:center;
+    margin-top:35px;
+    padding:35px 20px;
+}
+
+.final h2{
+    font-family:'Playfair Display',serif;
+    font-size:32px;
+    color:#ff76b1;
+}
+
+.final p{
+    margin-top:15px;
+    line-height:2;
+    color:#ddd;
+}
+
+.signature{
+    margin-top:25px;
+    font-size:22px;
+}
+
+.heartFloat{
+    position:fixed;
+    bottom:-30px;
+    font-size:20px;
+    pointer-events:none;
+    animation:floatUp linear forwards;
+    z-index:1;
+}
+
+@keyframes floatUp{
+    0%{
+        transform:translateY(0) rotate(0);
+        opacity:0;
+    }
+    15%{
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+@keyframes pulse{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.12);
+    }
+}
+
+@media(max-width:600px){
+    .hero h1{
+        font-size:37px;
+    }
+
+    .message{
+        font-size:16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- شاشة القفل -->
+
+<div id="lockScreen">
+
+    <div class="lockBox">
+
+        <div class="lock">🔐</div>
+
+        <h1>صفحة خاصة ليكي ❤️</h1>
+
+        <p>
+            في حاجة حلوة مستنياكي هنا<br>
+            بس الأول دخلي التاريخ الصح 🥹❤️
+        </p>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="اكتبي الباسورد ❤️"
+        >
+
+        <button onclick="unlock()">
+            افتحيلي قلبي ❤️
+        </button>
+
+        <div id="error">
+            الباسورد غلط 😭❤️ جربي تاني
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- الصفحة -->
+
+<div id="main">
+
+<div class="container">
+
+<section class="hero">
+
+    <div class="heart">❤️</div>
+
+    <h1>9 / 9</h1>
+
+    <h2>اليوم المميز بتاعنا 🥹❤️</h2>
+
+    <div class="date">
+        يوم مش شبه أي يوم ❤️
+    </div>
+
+</section>
+
+
+<!-- الرسالة -->
+
+<div class="card">
+
+<h2>إلى أجمل واحدة في حياتي ❤️</h2>
+
+<div class="message">
+
+<p>
+مش عارف أبدأ الكلام منين ولا أقولك إيه بالظبط
+بس كل اللي أعرفه إن يوم 9/9 بقى ليه معنى مختلف عندي
+لأن اليوم ده بيفكرني بيكي وبكل حاجة حلوة حصلت بسبب وجودك في حياتي ❤️
+</p>
+
+<p>
+أنا مش محتاج مناسبة علشان أقولك إني بحبك
+بس النهارده حبيت أعمل حاجة مخصوص ليكي
+علشان تعرفي قد إيه وجودك بالنسبالي مهم
+وقد إيه انتي بقيتي جزء جميل من أيامي وتفكيري وحياتي ❤️
+</p>
+
+<p>
+أنا مش بحب غيرك ومش عايز غيرك
+ومهما قابلت ناس ومهما اتكلمت مع ناس
+مفيش حد بيكون في قلبي بنفس المكان اللي انتي فيه
+لأن مكانك عندي مختلف ومش شبه أي حد ❤️
+</p>
+
+<p>
+بحب تفاصيلك الصغيرة قبل الكبيرة
+بحب طريقتك في الكلام
+بحب ضحكتك
+بحب وجودك حتى لو مفيش كلام
+وبحب الإحساس اللي بيجيلي لما أعرف إنك موجودة في حياتي ❤️
+</p>
+
+<p>
+يمكن ساعات معرفش أعبّر عن اللي جوايا بالطريقة الصح
+ويمكن كلامي ميكونش كفاية
+بس صدقيني جوايا كلام كتير أوي
+أكتر بكتير من اللي بعرف أقوله
+</p>
+
+<p>
+انتي من الناس القليلة اللي وجودهم بيفرق بجد
+مجرد رسالة منك ممكن تغير يوم كامل
+ومجرد كلمة حلوة منك ممكن تخليني مبسوط من غير أي سبب تاني
+وده لوحده بيخليني أعرف قد إيه انتي مهمة عندي ❤️
+</p>
+
+<p>
+أنا مش عايز حبنا يبقى مجرد كلام حلو وخلاص
+أنا عايز كل يوم يعدي يثبتلك إنك ليكي مكان كبير عندي
+وعايز أفضل فاكر التفاصيل والأيام والضحك والكلام
+وكل لحظة حلوة جمعتنا ❤️
+</p>
+
+<p>
+9/9 بالنسبالي مش مجرد رقم مكتوب على شاشة
+ده يوم حبيت أقولك فيه إنك غالية عندي
+وإن وجودك في حياتي حاجة أنا بقدرها جدًا
+وإن مهما الأيام اتغيرت
+هفضل فاكر اليوم ده والسبب اللي خلاه مميز ❤️
+</p>
+
+<p>
+أنا بحبك من غير ما أحتاج سبب
+ومش بحبك علشان حاجة معينة
+أنا بحبك علشان انتي انتي
+بكل تفاصيلك وبكل شخصيتك
+وبكل الحاجات اللي بتخليكي مختلفة عن أي حد تاني ❤️
+</p>
+
+<p>
+ولو سألتيني مين أكتر شخص نفسي يفضل موجود في حياتي
+هقولك انتي
+ولو سألتيني مين الشخص اللي نفسي أشوفه مبسوط دايمًا
+هقولك انتي
+ولو سألتيني مين الشخص اللي نفسي أفضل أعمل معاه ذكريات كتير
+برضه هقولك انتي ❤️
+</p>
+
+<p>
+نفسي الأيام الجاية تكون أحلى من اللي فاتت
+ونفضل نضحك مع بعض
+ونعمل ذكريات أكتر
+وكل مرة نفتكر الأيام اللي فاتت نفتكر قد إيه كانت حلوة ❤️
+</p>
+
+<p>
+وعايزك تعرفي حاجة مهمة جدًا
+أنا مش بكتب الكلام ده علشان يوم 9/9 بس
+أنا بكتبه علشان كل يوم جوايا كلام كتير ليكي
+بس النهارده قررت أطلعه كله مرة واحدة 😂❤️
+</p>
+
+<p>
+انتي بالنسبة لي مش مجرد شخص بحبه
+انتي شخص وجوده بيفرق
+وشخص ليه قيمة كبيرة عندي
+وشخص نفسي أشوفه دايمًا بخير ومبسوط ❤️
+</p>
+
+<p style="text-align:center;font-size:22px;color:#ff79b3;">
+
+أنا بحبك ❤️
+
+<br>
+
+ومش بحب غيرك ❤️
+
+<br>
+
+ومش عايز غيرك ❤️
+
+<br>
+
+و9/9 هيفضل يوم مميز عندي عشان انتي فيه 🥹❤️
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- النهاية -->
+
+<div class="final">
+
+<h2>9/9 ❤️</h2>
+
+<p>
+يمكن الصفحة دي مجرد كود على الموبايل
+بس كل كلمة فيها طالعة من قلبي
+وكل ❤️ هنا ليه معنى
+وأتمنى لما تشوفيها تعرفي قد إيه انتي غالية عندي ❤️
+</p>
+
+<div class="signature">
+
+إلى الشخص اللي اختاره قلبي ❤️
+
+<br>
+
+بحبك 🥹❤️
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+function unlock(){
+
+    let password =
+    document.getElementById("password").value;
+
+    if(password === "19/10"){
+
+        document.getElementById("lockScreen").style.display="none";
+
+        document.getElementById("main").style.display="block";
+
+        startHearts();
+
+    }else{
+
+        document.getElementById("error").style.display="block";
+
+    }
+
+}
+
+
+function createHeart(){
+
+    const heart =
+    document.createElement("div");
+
+    heart.className="heartFloat";
+
+   
